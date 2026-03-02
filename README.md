@@ -1,23 +1,21 @@
 # SIAGE Login Project
 
-## What is this?
-- Frontend: Angular/React login form
-- Backend: Node.js login API with hardcoded user
+# Angular + Node Login Assignment
 
 ## How to run
 
 ### Backend
 1. Open terminal
-2. Go to backend folder: `cd backend`
+2. Go to backend folder: `cd back`
 3. Install dependencies: `npm install`
 4. Start backend: `npm start`
 > Backend runs at `http://localhost:5000/api/login`
 
 ### Frontend
 1. Open another terminal
-2. Go to frontend folder: `cd frontend`
+2. Go to frontend folder: `cd front`
 3. Install dependencies: `npm install`
-4. Start frontend: `ng serve` (for Angular)
+4. Start frontend: `ng serve`
 > Frontend runs at `http://localhost:4200`
 
 ## How it works

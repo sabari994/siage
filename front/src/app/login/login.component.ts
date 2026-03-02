@@ -15,7 +15,7 @@ export class LoginComponent {
 
   constructor(private fb:FormBuilder,private userService: UserService){
     this.loginform = this.fb.group({
-      email:['',[Validators.required, Validators.email]],
+      email:['',[Validators.required, Validators.pattern(/^[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/)]],
       password:['',Validators.required]
     })
   }
@@ -40,7 +40,7 @@ export class LoginComponent {
           // console.log("res==>",res)
           this.message = res.message;
           alert(this.message);
-          // this.loginform.reset();
+          this.loginform.reset();
         },
         error: (err) => {
           this.error = err.error.message;

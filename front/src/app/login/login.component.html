@@ -6,7 +6,7 @@
                 <mat-form-field class="w-100">
                     <input matInput type="email" formControlName="email" placeholder="Enter Email">
                     <mat-error *ngIf="loginform.get('email')?.hasError('required')">Email is required</mat-error>
-                    <mat-error *ngIf="loginform.get('email')?.hasError('email')">Enter Valid Email Address</mat-error>
+                    <mat-error *ngIf="loginform.get('email')?.hasError('pattern')">Enter Valid Email Address</mat-error>
                 </mat-form-field>
             </div>
         </div>    
